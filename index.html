@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js"> 
+  <!-- 
+  - The primary purpose of the no-js class is to allow the use of CSS to style JavaScript-free pages, i.e. defining CSS styles for JavaScript-enabled browsers as well as for JavaScript-disabled browsers.
+  - Thus, the “no-js” class will only be present if JavaScript has been disabled. This enables styling a pure HTML and CSS page without the use of any client side-scripting.
+  - But if JavaScript is enabled, it removes the “no-js” class automatically.
+  - The “no-js” class is available in the markup by default.
+  - The “no-js” class is basically a way to be able to style things with or without using JavaScript.
+  - The “no-js” class is added to the topmost html element which serves as an instruction for Modernizr. 
+  -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Revamp</title> <!--march 2023-->
+    <link rel="icon" href="https://res.cloudinary.com/dlmhhmfb7/image/upload/v1680159314/marion_christian_macaraig_4_vyo4hx.png" alt="alc logo">
+    <!--Icons Link -->
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script> -->
+    <!--Animated.CSS Link / css animations from my h1 and h2 in my home section-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--CSS main link-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- scrollreveal / Still trying to edit -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- modernizr / This is not the new version of modernizr / hover effect from my cd-nav li and cd-nav-trigger-->
+    <script src="js/modernizr.js"></script>
+</head>
+<body>
+
+  <div class="animsition">
+    <div class="nav-wrapper cbp-af-header footer" style="padding: 0">
+        <img class="logo" src="https://res.cloudinary.com/dlmhhmfb7/image/upload/v1680159314/marion_christian_macaraig_4_vyo4hx.png" alt="alc logo" />
+        <a href="#cd-nav" class="cd-nav-trigger"><span></span></a>
+    </div>
+
+      <!--Home section-->
+      <section>
+        <div class="home">
+            <div class="home-title">
+                <h1 class="animate__animated animate__bounce">
+                    Hello, I am <span class="color-text"> Marion Macaraig </span>
+                </h1>
+                <h2 class="animate__animated animate__bounceInRight">
+                    I am a computer science graduate, passionate about web development
+                </h2>
+                <button class="btn">
+                    <a href="#projects">
+                      <span class="chaffle" data-lang="en">View projects</span>
+                    </a> 
+                </button>
+                <button class="btn">
+                    <a href="./CV.MacaraigMarion.pdf">
+                      <span class="chaffle" data-lang="en">Resume</span>
+                    </a>
+                </button>
+            </div>
+        </div>
+      </section>
+      <!--Home section ends-->
+
+      <!--Skills section-->
+      <section class="skills" id="skills">
+        <h3>Skills</h3>
+          <div class="skills-container">
+            <div class="skills-btn" title="html">
+              <span></span>
+              <span></span>
+              <span><i class="fa fa-html5" aria-hidden="true"></i></span>
+              <span></span>
+          </div>
+            <div class="skills-btn" title="css">
+                <span></span>
+                <span></span>
+                <span><i class="fa fa-css3" aria-hidden="true"></i></span>
+                <span></span>
+            </div>
+            <div class="skills-btn" title="javascript">
+                <span></span>
+                <span></span>
+                <span><i class='bx bxl-javascript'></i></span>
+                <span></span>
+            </div>
+            <div class="skills-btn" title="react">
+                <span></span>
+                <span></span>
+                <span><i class='bx bxl-react' ></i></span>
+                <span></span>
+            </div>
+            <div class="skills-btn" title="php">
+                <span></span>
+                <span></span>
+                <span><i class='bx bxl-php'></i></span>
+                <span></span>
+            </div>
+            <div class="skills-btn" title="database">
+                <span></span>
+                <span></span>
+                <span><i class="fa fa-database" aria-hidden="true"></i></span>
+                <span></span>
+            </div>
+          </div>
+      </section>
+      <!--Skills section ends-->
+
+      <div class="section-head-padding"></div>
+      <div class="section section-padding-top-bottom" style="padding: 120px 0;" id="scroll-link">
+          <div class="parallax-contacts"></div>
+      </div>
+
+      <!--Project Section-->
+      <section class="projects" id="projects">
+        <h3>Projects</h3>
+
+          <!-- <div>
+            <select name="projects categories" id="projects-categories" class="projects-categories" onchange="changeCategory()">
+              <option value="all" id="all">All</option>
+              <option value="apps" id="apps">Online applications</option>
+              <option value="landing-page" id="landing-pages">Landing pages</option>
+              <option value="games" id="games">Games</option>
+            </select>
+          </div> -->
+
+        <div class="projects-container">
+          <article  class="projects--item">
+            <div class="image--container">
+              <img class="landing-page--src" src="./images/animation-template.PNG" alt="Yo design landing page">
+                <div class="arrows">
+                  <i class='bx bxs-chevron-left-circle prev-btn'></i>
+                  <i class='bx bxs-chevron-right-circle next-btn' ></i>
+                </div>
+            </div>
+            <div class="description">
+              <h4 class="landing-page--name">MC Clothing Store - Responsive Landing Page</h4>
+                <div class="underline"></div>
+                  <div class="btn-container">
+                      <a class="btn-small btn--view-live" href="https://forkify-recipes-search.netlify.app/" target="_blank"> View
+                        Live</a>
+                      <a class="btn-small btn--view-code" href="https://github.com/Gabrielamcarvalho/forkify" target="_blank">View
+                        Code</a>
+                  </div>
+            </div>
+          </article>
+    
+          <article class="projects--item">
+              <div class="video--container">
+                <img class="image" src="./images/mc-university.PNG" alt="" srcset="">
+              </div>
+
+              <div class="description">
+                <h4>Student Management System</h4>
+                  <div class="underline"></div>
+                <div class="iconify-container">
+                  <span class="project-icon"><i class='bx bxl-html5'></i></span>
+                  <span class="project-icon"><i class='bx bxl-css3' ></i></span>
+                  <span class="project-icon"><i class='bx bxl-php' ></i></span>
+                </div>
+                  <p class="description--text">Student management system - this system can list each individual students
+                    information and have a capability to add, edit, delete and can search a student.
+                    and this system also have a admin  login(user management).
+                    It's built with HTML and CSS and PHP. </p>
+                  <div class="btn-container">
+                    <a class="btn-small" href="" target="_blank">View Live</a>
+                    <a class="btn-small" href="" target="_blank">View Code</a>
+                  </div>
+              </div>
+          </article>
+    
+          <article class="projects--item">
+              <div class="video--container">
+                <img class="image" src="images/FeaturedProject1.png" alt="" srcset="">
+              </div>
+              
+              <div class="description">
+                <h4>My first Portfolio</h4>
+                <div class="underline"></div>
+                  <div class="iconify-container">
+                    <span class="iconify" data-icon="icomoon-free:html-five" data-inline="false"></span>
+                    <span class="iconify" data-icon="bx:bxl-css3" data-inline="false"></span>
+                    <span class="iconify" data-icon="cib:javascript" data-inline="false"></span>
+                  </div>
+                <p class="description--text"> This is a version of my personal website, which I started My interest in web development. It's built with HTML , CSS and JavaScript. This is also can received an email on my contact form.</p>
+                <div class="btn-container">
+                  <a class="btn-small" href="https://macaraigmariongithub.github.io/macaraigmarion.com/" target="_blank">View Live</a>
+                  <a class="btn-small" href="https://github.com/macaraigmariongithub/macaraigmarion.com" target="_blank">View Code</a>
+                </div>
+              </div>
+          </article>
+    
+          <article class="projects--item">
+              <div class="video--container">
+                <img class="image" src="images/QrCode.PNG" alt="" srcset="">
+              </div>
+              
+              <div class="description">
+                <h4>Qr Code Generator</h4>
+                  <div class="underline"></div>
+                <div class="iconify-container">
+                    <span class="iconify" data-icon="icomoon-free:html-five" data-inline="false"></span>
+                    <span class="iconify" data-icon="bx:bxl-sass" data-inline="false"></span>
+                    <span class="iconify" data-icon="cib:javascript" data-inline="false"></span>
+                    <span class="iconify" data-icon="cib:mysql" data-inline="false"></span>
+                    <span class="iconify" data-icon="cib:php" data-inline="false"></span>
+                </div>
+                <p class="description--text">A QR code generator-is a software that generates QR codes, in which you can store a variety of data/information. 
+                  For example, a URL that will land you to a video page, a text, an image, or a website when your QR code is scanned. Tutorial course by pinoyfreecoder. Created in Reactjs.</p>
+                <div class="btn-container">
+                    <a class="btn-small" href="https://qr-code-generator-webapp.netlify.app/" target="_blank">View Live</a>
+                    <a class="btn-small" href="https://github.com/macaraigmariongithub/qr-code-generator" target="_blank">View Code</a>
+                </div>
+              </div>
+          </article>
+    
+          <!-- <article class="projects--item">
+              <div class="video--container">
+                <img class="image" src="images/boredchatapp.PNG" alt="" srcset="">
+              </div>
+
+              <div class="description">
+                <h4>Mapty</h4>
+                  <div class="underline"></div>
+                <div class="iconify-container">
+                <span class="iconify" data-icon="icomoon-free:html-five" data-inline="false"></span>
+                    <span class="iconify" data-icon="bx:bxl-css3" data-inline="false"></span>
+                    <span class="iconify" data-icon="cib:javascript" data-inline="false"></span>
+                    <span class="iconify" data-icon="carbon:api-1" data-inline="false"></span>
+                </div>
+                <p class="description--text">Mapty is an application created to store my running and cycling in the city. We can save in the map the location where we run/ cycle and the km and time.  </p>
+                <div class="btn-container">
+                    <a class="btn-small" href="" target="_blank">View Live</a>
+                    <a class="btn-small" href="" target="_blank">View Code</a>
+                </div>
+              </div>
+          </article>
+    
+          <article class="projects--item">
+              <div class="video--container">
+                <img class="image" src="images/Form-Validator.PNG" alt="" srcset="">
+              </div>
+
+              <div class="description">
+                <h4>Quiz Game</h4>
+                  <div class="underline"></div>
+                <div class="iconify-container">
+                    <span class="iconify" data-icon="icomoon-free:html-five" data-inline="false"></span>
+                    <span class="iconify" data-icon="bx:bxl-css3" data-inline="false"></span>
+                    <span class="iconify" data-icon="cib:javascript" data-inline="false"></span>
+                    <span class="iconify" data-icon="carbon:api-1" data-inline="false"></span>
+                </div>
+                <p class="description--text">Quiz game with 10 categories to play with friends! The questions are retrieved from the Open Trivia DB API. The highest scores are stored in the local storage. </p>
+                <div class="btn-container">
+                  <a class="btn-small" href="" target="_blank">View Live</a>
+                  <a class="btn-small" href="" target="_blank">View Code</a>
+                </div>
+              </div>
+          </article> -->
+        </div>
+          <a class="projects--extra" href="https://github.com/macaraigmariongithub" target="_blank">Check my GitHub and see More of my projects!</a>
+      </section>
+      <!--Project Section ends-->
+
+      <div class="section section-padding-top-bottom-small">
+          <div class="like-our-proj">
+            <h6>LIKE MY WORKS?</h6>
+              <a href="#contact" data-gal="m_PageScroll2id" data-ps2id-offset="50">
+                <span class="chaffle" data-lang="en">contact me</span>
+              </a>
+          </div>
+      </div>
+
+      <div class="section section-padding-top-bottom">
+        <div class="parallax-contact"></div>
+      </div>
+
+      <!--About section-->
+      <section class="about" id="about">
+        <h3>About</h3>
+          <div class="about-container">
+              <div class="about-text">
+                  <p>My name is Marion Christian Macaraig and I am computer science graduate. I am interested about web development both Front End and Back End.
+                  I really like the idea of ​​how to build a website. Currently I am still learning and working on web technologies to enhance my skills and knowledge.
+                  Please leave a message down below and I will get back to you as soon as possible.
+                  </p>
+              </div>
+          </div>
+      </section>
+      <!--About section ends-->
+
+      <!--Contact section-->
+      <section class="contact" id="contact">    
+          <div class="contact-container">
+              <div class="contact-right">
+                <h3>Contact</h3>
+
+                  <form action="https://formsubmit.co/marionchristianmacaraig@gmail.com" method="post" id="">
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="text" name="Name" class="field" placeholder="Your Name" required>
+                    <input type="email" name="Email" class="field" placeholder="Email Address" required>
+
+                    <input type="hidden" name="_next" value="https://macaraigmariongithub.github.io/macaraigmarion.com/thankyoupages/thankyou.html">
+                    <textarea name="Message" class="field area" placeholder="Write message here.." required></textarea>
+                    <input type="submit" value="Submit" class="btn chaffle" data-lang="en">
+
+                  </form>
+          
+              </div>
+          </div>
+      </section>
+      <!-- end of contact section -->
+ 
+      <!--Footer section-->
+      <footer class="footer">
+          <div class="footer-container">
+              <div class="footer-img">
+                 <img src="https://res.cloudinary.com/dlmhhmfb7/image/upload/v1680159314/marion_christian_macaraig_4_vyo4hx.png" alt="alc logo" />
+              </div>
+              <div class="footer-text">
+                <p>marionchristianmacaraig</p>
+                <p>Design by IG Design, Serbia</p>
+              </div>
+          </div>
+      </footer>
+       <!--Footer section ends-->
+
+    </div>
+
+    <!--Header start-->
+    <nav class="cd-nav-container" id="cd-nav">
+      <header> 
+          <a href="#0" class="cd-close-nav">Close</a> 
+      </header>
+      <ul class="cd-nav" style="display: flex; flex-flow: column;">
+          <li data-menu="index">
+              <a href="">
+                <i class="fa fa-home" style="font-size:2rem;color:#333"></i>
+              <em>Home</em>
+              </a>
+          </li>
+          <li data-menu="skills">
+            <a href="#skills">
+              <i class="fa fa-sliders" style="font-size:2rem;color:#333"></i>
+            <em>Skills</em>
+            </a>
+        </li>
+          <li data-menu="work">
+              <a href="#projects">
+                <i class="fa fa-briefcase" style="font-size:2rem;color:#333"></i>
+              <em>Projects</em> 
+              </a>
+          </li>
+          <li data-menu="about">
+              <a href="#about">
+                <i class="fa fa-address-card" style="font-size:2rem;color:#333"></i>
+              <em>About Me</em>
+              </a>
+          </li>
+          <li data-menu="contact">
+              <a href="#contact">
+                <i class="fa fa-envelope" style="font-size:2rem;color:#333"></i>
+              <em>Contact Me</em>
+              </a>
+          </li>
+          <li data-menu="blog">
+              <a href="blog/blog.html" class="animsition-link" data-animsition-out="fade-out-right-delay">
+                <i class="fa fa-comments" style="font-size:2rem;color:#333"></i>
+              <em>blog</em>
+              </a>
+          </li>
+      </ul>
+    </nav>
+    <!--Header start ends-->
+
+  <div class="cd-overlay"><!-- shadow layer visible when navigation is visible --></div>
+
+    <!--Jquery / This is not the new version of Jquery -->
+    <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+    <!--Link to main file of js -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script type="text/javascript" src="js/cbpAnimatedHeader.min.js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
+    <!--Jquery PageScroll2id.js/ This is not the new version of PageScroll2id.js-->
+    <script type="text/javascript" src="js/jquery.malihu.PageScroll2id.js"></script>
+    <!--Jquery animsition This is not the new version of animsition-->
+    <script type="text/javascript" src="js/jquery.animsition.min.js"></script>
+    <script type="text/javascript">
+      (function ($) {
+        'use strict';
+        $(document).ready(function () {
+          $('.animsition').animsition({
+            inClass: 'fade-in-right',
+            outClass: 'fade-out-right',
+            inDuration: 600,
+            outDuration: 600,
+            linkElement: '.animsition-link',
+            // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+            loading: true,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            unSupportCss: ['animation-duration', '-webkit-animation-duration', '-o-animation-duration'],
+            //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+            //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+
+            overlay: false,
+
+            overlayClass: 'animsition-overlay-slide',
+            overlayParentElement: 'body',
+          });
+        });
+      })(jQuery);
+    </script>
+        <!--Jquery chafffle/ This is not the new version of chaffle-->
+        <script type="text/javascript" src="js/jquery.chaffle.min.js"></script>
+        <!--Jquery chafffle/ This is not the new version of parallax-->
+        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+        <!--Jquery chafffle/ This is not the new version of tipper.min.js-->
+        <script type="text/javascript" src="js/jquery.fs.tipper.min.js"></script>
+</body>
+</html>
